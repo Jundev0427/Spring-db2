@@ -4,6 +4,7 @@ import hello.itemservice.config.*;
 import hello.itemservice.repository.ItemRepository;
 import javax.sql.DataSource;
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +15,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 //@Import(MemoryConfig.class)
 @Slf4j
-@Import(JdbcTemplateV3Config.class)
+@Import(MyBatisConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
