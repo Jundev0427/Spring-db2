@@ -15,7 +15,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 //@Import(MemoryConfig.class)
 @Slf4j
-@Import(SpringDataJpaConfig.class)
+@Import(QueryDslConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
